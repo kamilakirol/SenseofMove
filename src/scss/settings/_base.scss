@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: $fonts-poppins;
+}
+
+.container {
+  margin: 0 15px;
+
+  @include notebook {
+    width: 1170px;
+    margin: 0 auto;
+  }
+
+}
