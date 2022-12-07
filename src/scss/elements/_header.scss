@@ -72,6 +72,7 @@
     .hamburger {
       display: block;
       cursor: pointer;
+      margin-right: 15px;
 
       .bar {
         display: block;
@@ -104,6 +105,7 @@
         box-shadow: 0 7px 22px -6px rgba(33, 123, 244, 0.34);
         margin-top: 20px;
         margin-bottom: 20px;
+        margin-right: 15px;
 
         &:hover {
           background-color: darken($color-buttons, 10%)

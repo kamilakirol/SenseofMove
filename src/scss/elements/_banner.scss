@@ -24,6 +24,7 @@
         color: $color-par;
         font-size: 14px;
         padding-bottom: 40px;
+        line-height: 28px;
       }
 
       &_buttons {
@@ -58,11 +59,16 @@
     @include tablet {
       flex-direction: row;
       align-items: center;
+      justify-content: space-between;
 
       .banner_box {
 
         &_title {
           font-size: 40px;
+        }
+
+        &_text {
+          width: 360px;
         }
 
         &_buttons{

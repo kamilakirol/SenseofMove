@@ -1,0 +1,44 @@
+.aboutUs {
+  background-image: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
+
+  &_container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .aboutUs_box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &_title {
+        font-size: 36px;
+        font-weight:bold;
+        margin-bottom: 30px;
+      }
+
+      &_text {
+        color: $color-par;
+        line-height: 28px;
+        margin-bottom: 30px;
+      }
+    }
+
+    @include tablet {
+      flex-direction: row;
+
+      .aboutUs_box {
+        max-width: 511px;
+        align-items: flex-start;
+        margin-right: 90px;
+      }
+
+      .aboutUs_carousel {
+        width: 500px;
+      }
+
+    }
+
+  }
+}

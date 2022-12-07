@@ -1,0 +1,16 @@
+.webinars {
+  &_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+
+    .webinars_title {
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .webinars_carousels {
+    }
+  }
+}
