@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
-import {SliderData} from "./SliderData";
+import {SliderData} from "./SliderData"
 
 const CarouselAboutUs = () => {
     const settings = {
@@ -13,14 +13,14 @@ const CarouselAboutUs = () => {
         arrows:false,
         autoplay:true,
         centerMode:true,
-        centerPadding: 0,
+        centerPadding: 0
     }
     return (
 
             <Slider {...settings}>
                 {SliderData.map((slide, index) => {
                     return (
-                        <img src={slide.image} alt='therapis' />
+                        <img key={index} src={slide.image} alt='therapis' />
                     )
                 })}
             </Slider>

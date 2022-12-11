@@ -1,7 +1,12 @@
-.header {
+header {
   position: fixed;
   z-index: 1;
   width: 100vw;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+
+.header {
   background-color: rgba(33, 123, 244, 0.08);
 
   &_container {
@@ -16,6 +21,7 @@
       align-items: center;
       font-size: 24px;
       font-weight: bold;
+      margin-left:15px;
 
       .header_title{
         margin-left: 6px;

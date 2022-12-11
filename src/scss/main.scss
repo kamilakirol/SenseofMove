@@ -7,9 +7,13 @@
 @import "settings/base";
 @import "settings/button";
 
-@import "elements/header";
-@import "elements/banner";
-@import "elements/offers";
-@import "elements/offer";
-@import "elements/aboutUs";
-@import "elements/webinars";
+@import "../components/Header/header";
+@import "../components/Main/Banner/banner";
+@import "../components/Main/Offers/offers";
+@import "../components/Main/Offers/offer";
+@import "../components/Main/AboutUs/aboutUs";
+@import "../components/Main/Webinars/webinars";
+@import "../components/Main/Webinars/webinar";
+@import "../components/Main/Location/location";
+@import "../components/Main/Webinars/Registration/registration";
+@import "../common/modal";

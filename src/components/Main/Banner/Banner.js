@@ -1,11 +1,10 @@
 import React from 'react';
-import BannerImg from '../../assets/banner_img.png'
+import BannerImg from '../../../assets/banner_img.png'
 
 const Banner = () => {
     return (
         <section className='banner'>
-            <div className='banner_overlay'></div>
-            <div className='container'>
+            <div className='banner_container container'>
 
                 <div className='banner_box'>
                     <h1 className='banner_box_title'>Gabinet integracji <br/> sensorycznej</h1>
@@ -16,7 +15,7 @@ const Banner = () => {
                     </div>
                 </div>
 
-                <img className='banner_img' src={BannerImg}/>
+                <img className='banner_img' src={BannerImg} alt="kid"/>
 
             </div>
         </section>

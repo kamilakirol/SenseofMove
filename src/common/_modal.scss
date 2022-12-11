@@ -1,0 +1,45 @@
+.ReactModal__Content--after-open {
+  //background-color: linear-gradient(311,76deg, #D4E7FE -15,24%, #FFFFFF 78,85%)!important;
+  background: linear-gradient(311deg, #D4E7FE -15%, #FFFFFF 78%)!important;
+
+
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+
+  &_title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  &_data {
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  &_form {
+    display: flex;
+    flex-direction: column;
+
+    &_label {
+      margin: 15px;
+    }
+
+    &_input {
+      padding: 5px;
+    }
+
+    &_button {
+      margin-top: 15px;
+      padding: 15px;
+    }
+
+  }
+
+
+}
