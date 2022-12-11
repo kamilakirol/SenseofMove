@@ -1,7 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState} from 'react';
 import CarouselWebinars from "./CarouselWebinars";
 import {webinarsData} from "./WebinarsData";
-import Registration from "./Registration/Registration";
 import Modal from "../../../common/Modal";
 
 const Webinars = () => {
