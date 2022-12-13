@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Webinars from "./Webinars/Webinars";
 import Location from "./Location/Location";
-// import ContactUs from "./ContactUs/ContactUs";
+import ContactUs from "./ContactUs/ContactUs";
 
 const Main = () => {
     return (
@@ -16,7 +16,7 @@ const Main = () => {
             <AboutUs />
             <Webinars />
             <Location />
-            {/*<ContactUs />*/}
+            <ContactUs />
 
         </>
     );

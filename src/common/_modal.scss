@@ -1,8 +1,10 @@
 .ReactModal__Content--after-open {
   //background-color: linear-gradient(311,76deg, #D4E7FE -15,24%, #FFFFFF 78,85%)!important;
   background: linear-gradient(311deg, #D4E7FE -15%, #FFFFFF 78%)!important;
+}
 
-
+.inactive {
+  display: none;
 }
 
 .modal {
@@ -40,6 +42,5 @@
     }
 
   }
-
 
 }

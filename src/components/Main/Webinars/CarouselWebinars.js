@@ -12,7 +12,7 @@ const CarouselWebinars = ({webinarsData, openModal, usedTickets}) => {
         slidesToScroll: 1,
         autoplay:true,
         centerMode:true,
-        arrows:true,
+        arrows:false,
         centerPadding: 0
     }
 

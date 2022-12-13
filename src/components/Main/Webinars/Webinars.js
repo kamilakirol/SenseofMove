@@ -1,7 +1,7 @@
-import React, { useState} from 'react';
+import React, {useState} from 'react';
 import CarouselWebinars from "./CarouselWebinars";
 import {webinarsData} from "./WebinarsData";
-import Modal from "../../../common/Modal";
+import ModalTest from "../../../common/ModalTest";
 
 const Webinars = () => {
     const websTickets = webinarsData.map(({id}) => ({tickets: 0, id}));
@@ -34,7 +34,7 @@ const Webinars = () => {
                     <CarouselWebinars webinarsData={webinarsData} usedTickets={usedTickets} openModal={openModal} />
                 </section>
             </div>
-            <Modal modal={modal} closeModal={closeModal} buyTicket={buyTicket}  />
+            <ModalTest modal={modal} closeModal={closeModal} buyTicket={buyTicket}  />
         </section>
     );
 };

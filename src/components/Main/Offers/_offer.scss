@@ -3,9 +3,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 15px;
+  margin-left: 15px;
 
   &:last-of-type{
     margin-bottom: 60px;
+  }
+
+  img {
+    width: 100%;
   }
 
   &_box {
@@ -49,6 +55,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    img {
+      width: initial;
+    }
 
     &_box{
       width: 340px;
