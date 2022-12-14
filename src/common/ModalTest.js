@@ -80,7 +80,7 @@ const ModalTest = ({modal, closeModal, buyTicket}) => {
                     </form> : <div className='submitted_modal'>
                         <img className='submitted_modal_image' src={SubmittedImg} alt='good' />
                         <p className='submitted_modal_title'> Brawo {name} jesteś zapisana na webinar</p>
-                        <button className='button submitted_modal_button'> Zamknij</button>
+                        <button className='button submitted_modal_button' onClick={onClose}> Zamknij</button>
                     </div>
                     }
                 </div>
