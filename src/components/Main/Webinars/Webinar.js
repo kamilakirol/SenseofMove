@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 
 const Webinar = ({webinar, openModal, usedTickets}) => {
     const {title, date, text, image, tickets, id} = webinar;
