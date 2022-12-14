@@ -1,0 +1,11 @@
+.location_box_info_weather {
+  display: flex;
+  align-items: center;
+
+  &_temp {
+    font-weight: bold;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 18px;
+  }
+}

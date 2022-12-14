@@ -12,6 +12,10 @@ body {
 .container {
   margin: 0 15px;
 
+  @include tablet {
+    margin: 0 30px;
+  }
+
   @include notebook {
     width: 1170px;
     margin: 0 auto;

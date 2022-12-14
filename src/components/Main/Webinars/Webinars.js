@@ -27,7 +27,7 @@ const Webinars = () => {
 
 
     return (
-        <section className='webinars'>
+        <section id='webinars' className='webinars'>
             <div className='webinars_container container'>
                 <h2 className='webinars_title'>Webinary</h2>
                 <section className='webinars_carousels'>

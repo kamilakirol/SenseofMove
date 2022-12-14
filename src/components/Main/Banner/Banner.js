@@ -10,8 +10,8 @@ const Banner = () => {
                     <h1 className='banner_box_title'>Gabinet integracji <br/> sensorycznej</h1>
                     <p className='banner_box_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <div className='banner_box_buttons'>
-                        <button className='button banner_button'>Diagnoza</button>
-                        <button className='button_white banner_button'>Terapia</button>
+                        <button className='button banner_button'><a className='banner_button_nav' href="#diagnosis">Diagnoza</a></button>
+                        <button className='button_white banner_button'><a className='banner_button_nav banner_button_white' href="#therapy">Terapia</a></button>
                     </div>
                 </div>
 

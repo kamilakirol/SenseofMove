@@ -38,6 +38,16 @@
           height: 40px;
           border-radius: 10px;
 
+          &_nav {
+            text-decoration: none;
+            color: $color-white;
+
+          }
+
+          &_white {
+            color: $color-buttons;
+          }
+
           &:first-child {
             margin-right: 10px;
           }

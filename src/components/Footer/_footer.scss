@@ -1,0 +1,54 @@
+.footer {
+
+  &_box {
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_copy {
+      font-size: 8px;
+
+      @include tablet {
+        font-size: 12px;
+      }
+    }
+
+    &_logo {
+      display: flex;
+      align-items: center;
+      font-size: 10px;
+
+      &_title {
+        font-weight: bold;
+        margin-left: 6px;
+
+        @include tablet {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &_icons {
+      display: flex;
+      justify-content: center;
+
+      .footer_icon {
+        height: 30px;
+        width: 30px;
+        background-color: black;
+        margin-right: 8px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          width: 15px;
+          height: 15px;
+        }
+
+      }
+    }
+  }
+}

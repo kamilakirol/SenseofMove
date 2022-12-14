@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import ModalReact from 'react-modal';
+import SubmittedImg from "../assets/submitted_img.png"
 
 const customStyles = {
     content: {
@@ -15,7 +16,6 @@ const customStyles = {
 ModalReact.setAppElement('#root');
 
 const ModalTest = ({modal, closeModal, buyTicket}) => {
-    console.log({modal, closeModal, buyTicket});
     const [submitted, setSubmitted] = useState(false)
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -54,29 +54,33 @@ const ModalTest = ({modal, closeModal, buyTicket}) => {
                 style={customStyles}
             >
                 <div className='modal'>
-                    <button onClick={onClose}>close</button>
-                    <h3 className='modal_title'>{modal.webinar?.title}</h3>
-                    <p className='modal_data'>{modal.webinar?.date}</p>
+                    <div className='modal_button'>
+                        <button className='button_close' onClick={onClose}>&#215;</button>
+                    </div>
+                    <div className='modal_box'>
+                        <h3 className='modal_box_title'>{modal.webinar?.title}</h3>
+                        <p className='modal_box_data'>{modal.webinar?.date}</p>
+                    </div>
                     {submitted === false ? <form className='modal_form' onSubmit={onSubmit}>
                         <label className='modal_form_label'>Imię</label>
                         <input className='modal_form_input'
                                name="name"
                                type="text"
                                value={name}
-                               placeholder="Imię"
                                required
                                onChange={handleChangeName}/>
                         <label className='modal_form_label'>E-mail</label>
                         <input className='modal_form_input'
                                name="email"
                                type="email"
-                               placeholder="E-mail"
                                value={email}
                                required
                                onChange={handleChangeEmail}/>
                         <button type='submit' className='button modal_form_button'>Zapisz się</button>
                     </form> : <div className='submitted_modal'>
-                        <h3> Brawo {name} jesteś zapisana na webinar</h3>
+                        <img className='submitted_modal_image' src={SubmittedImg} alt='good' />
+                        <p className='submitted_modal_title'> Brawo {name} jesteś zapisana na webinar</p>
+                        <button className='button submitted_modal_button'> Zamknij</button>
                     </div>
                     }
                 </div>

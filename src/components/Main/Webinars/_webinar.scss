@@ -9,20 +9,20 @@
         margin-top: 40px;
         margin-bottom: 10px;
         color: $color-main;
+        font-weight: bold;
       }
 
       &_data {
         margin-top: 20px;
-        font-weight: bold;
         margin-bottom: 30px;
       }
     }
 
     &_text {
-      font-size: 18px;
+      font-size: 14px;
       margin-bottom: 30px;
       margin-top: 20px;
-      line-height: 36px;
+      line-height: 30px;
       color: $color-par;
       font-weight: 400;
     }
@@ -36,6 +36,7 @@
     &_place {
       color: #9C988F;
       margin-bottom: 20px;
+      font-size: 14px;
     }
   }
   .webinar_image {
@@ -50,12 +51,12 @@
       .webinar_info {
         &_title {
           font-size: 30px;
-          margin-bottom: 40px;
+          margin-bottom: 20px;
         }
       }
 
       &_text{
-        margin-right:20px;
+        margin-right:50px;
       }
     }
   }

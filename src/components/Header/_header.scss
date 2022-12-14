@@ -101,7 +101,7 @@ header {
 
         &:hover {
           color: $color-main;
-          font-weight: bold;
+          text-decoration: underline;
         }
       }
 
@@ -112,6 +112,11 @@ header {
         margin-top: 20px;
         margin-bottom: 20px;
         margin-right: 15px;
+
+        a{
+          color: $color-white;
+          text-decoration: none;
+        }
 
         &:hover {
           background-color: darken($color-buttons, 10%)

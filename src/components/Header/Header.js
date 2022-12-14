@@ -23,16 +23,18 @@ const Header = () => {
                         </div>
                         <div className='header_navigation'>
                             <ul className='header_navigation_menu'>
-                                <li><a className="header_navigation_element" href="/#">Diagnoza</a>
+                                <li><a className="header_navigation_element" href="#diagnosis">Diagnoza</a>
                                 </li>
-                                <li><a className="header_navigation_element" href="/#">Terapia</a>
+                                <li><a className="header_navigation_element" href="#therapy">Terapia</a>
                                 </li>
-                                <li><a className="header_navigation_element" href="/#">Cennik</a>
+                                <li><a className="header_navigation_element" href='#aboutUs'>Poznaj nas</a>
                                 </li>
-                                <li><a className="header_navigation_element" href="/#">Poznaj nas</a>
+                                <li><a className="header_navigation_element" href="#webinars">Webinary</a>
                                 </li>
                             </ul>
-                            <button className='button header_button'>Kontakt</button>
+                            <button className='button header_button'>
+                                <a href='#contactUs'>Kontakt</a>
+                            </button>
                         </div>
 
                     </nav>

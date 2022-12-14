@@ -17,7 +17,6 @@ const Main = () => {
             <Webinars />
             <Location />
             <ContactUs />
-
         </>
     );
 };

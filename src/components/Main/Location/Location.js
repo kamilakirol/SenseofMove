@@ -1,5 +1,6 @@
 import React from 'react';
-import LocationImg from "../../../assets/location_img.png"
+import LocationImg from "../../../assets/location_img.png";
+import Weather from "../Weather/Weather"
 
 const Location = () => {
     return (
@@ -7,7 +8,16 @@ const Location = () => {
             <div className='location_container container'>
                 <div className='location_box'>
                     <h2 className='location_box_title'>Lokalizacja</h2>
-                    <p className='location_box_text'>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div className='location_box_info'>
+                        <div className='location_box_info_address'>
+                            <h3 className='location_box_info_address_title'>SenseofMove </h3>
+                            <p className='location_box_info_address_street'>ul. Mirka 12 </p>
+                            <p className='location_box_info_address_city'>Warszawa 05-456 </p>
+                            <p className='location_box_info_address_phone'>tel. 458 658 546 </p>
+                        </div>
+                        <Weather />
+
+                    </div>
                     <img className='location_box_image' src={LocationImg} alt='map'/>
                 </div>
             </div>

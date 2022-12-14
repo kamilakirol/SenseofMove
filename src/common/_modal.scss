@@ -1,6 +1,14 @@
 .ReactModal__Content--after-open {
   //background-color: linear-gradient(311,76deg, #D4E7FE -15,24%, #FFFFFF 78,85%)!important;
   background: linear-gradient(311deg, #D4E7FE -15%, #FFFFFF 78%)!important;
+  box-shadow: 8px 8px 24px -14px rgba(28, 28, 33, 1);
+  border: none!important;
+  width: 100%;
+  max-width: 350px;
+
+  @include tablet {
+    max-width: 500px;
+  }
 }
 
 .inactive {
@@ -11,36 +19,98 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 40px;
 
-  &_title {
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 30px;
+  &_button {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    .button_close {
+      border-radius: 0;
+      width: 20px;
+      color: $color-par;
+      font-size: 30px;
+      background-color: transparent;
+      border: none;
+      font-weight: 200;
+
+      &:hover {
+        color: black;
+      }
+    }
   }
 
-  &_data {
-    font-weight: bold;
-    margin-bottom: 30px;
+
+  &_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+
+    &_title {
+      font-weight: bold;
+      font-size: 30px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    &_data {
+      font-size: 16px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
   }
+
 
   &_form {
     display: flex;
     flex-direction: column;
 
     &_label {
-      margin: 15px;
+      margin-top: 20px;
+      margin-bottom: 5px;
+      color: black;
+      font-weight: bold;
+      font-size: 14px;
     }
 
     &_input {
-      padding: 5px;
+      padding: 10px;
+      border: 1px solid lightgrey;
+      border-radius: 5px;
     }
 
     &_button {
-      margin-top: 15px;
+      margin-top: 30px;
       padding: 15px;
     }
 
   }
+}
+
+.submitted_modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &_title {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &_image {
+    margin-top: 10px;
+    width: 30%;
+  }
+
+  &_button {
+    width: 120px;
+    height: 40px;
+    margin-top: 30px;
+  }
+
 
 }
