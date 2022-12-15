@@ -64,7 +64,9 @@ const ContactUs = () => {
                             }
                             <button className='contactUs_form_button button' type="submit" >Wyślij</button>
                         </form>
-                        <img className='contactUs_box_image' src={ContactUsImage} alt='kid' />
+                        <img data-aos="flip-left"
+                             data-aos-easing="ease-out-cubic"
+                             data-aos-duration="2000" className='contactUs_box_image' src={ContactUsImage} alt='kid' />
                     </div>
                 </div>
             </div>

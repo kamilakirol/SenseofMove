@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Banner from "./Banner/Banner";
 import Offers from "./Offers/Offers";
 import AboutUs from "./AboutUs/AboutUs";
@@ -8,7 +8,17 @@ import Webinars from "./Webinars/Webinars";
 import Location from "./Location/Location";
 import ContactUs from "./ContactUs/ContactUs";
 
+import Aos from 'aos';
+import'aos/dist/aos.css';
+
 const Main = () => {
+
+    //hook pojawienie się jednorazowej animacji
+
+    useEffect(() => {
+        Aos.init({duration: 3000, easing: 'ease-in-out' })
+    }, [])
+
     return (
         <>
             <Banner />

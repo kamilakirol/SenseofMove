@@ -18,7 +18,7 @@ const Location = () => {
                         <Weather />
 
                     </div>
-                    <img className='location_box_image' src={LocationImg} alt='map'/>
+                    <img data-aos="fade-down" className='location_box_image' src={LocationImg} alt='map'/>
                 </div>
             </div>
         </section>

@@ -7,7 +7,7 @@ const Webinar = ({webinar, openModal, usedTickets}) => {
     let availableTickets = tickets - usedTickets.find((usedTicket) => usedTicket.id === id).tickets;
 
     return (
-        <section className='webinar'>
+        <section data-aos="fade-right" className='webinar'>
             <div className='webinar_box'>
                 <div className='webinar_info'>
                     <h3 className='webinar_info_title'>{title}</h3>

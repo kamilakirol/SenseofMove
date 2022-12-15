@@ -1,9 +1,11 @@
 import React from 'react';
 
+
+
 const Offer = ({title, text, image, isRight, offerId}) => {
 
     return (
-            <section id={offerId} className={`offer ${isRight === true ? 'reverse' : '' }`}>
+            <section id={offerId} className={`offer ${isRight === true ? 'reverse' : '' }`} data-aos={`${isRight === true ? 'fade-left' : 'fade-right'}`} data-aos-anchor-placement="left-center" >
                 <img src={image} alt=""/>
                 <div className='offer_box'>
                     <h2 className='offer_box_title'>{title}</h2>

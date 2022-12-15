@@ -4,7 +4,7 @@ import CarouselAboutUs from "./CarouselAboutUs";
 
 const AboutUs = () => {
     return (
-        <section className='aboutUs' id='aboutUs'>
+        <section className='aboutUs' id='aboutUs' data-aos="zoom-in">
             <div className='aboutUs_container container'>
                 <div className='aboutUs_box'>
                     <h2 className='aboutUs_box_title'>Poznaj nas</h2>
